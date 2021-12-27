@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>CSS Template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            /* header */
+            header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size:35px;
+                color:white;
+            }
+
+            nav {
+                float:left;
+                width:20%;
+                height:300px;
+                background: #ccc;
+                padding: 20px;
+            }
+
+            /* list inside the menu */
+            nav ul {
+                list-style-type:circle;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin: 10px;
+            }
+
+            nav ul li a{
+                text-decoration: none;
+            }
+
+            article {
+                float: left;
+                padding: 20px;
+                width: 80%;
+                background-color: #f1f1f1;
+                height: 300px;
+            }
+
+            /* Clear floats after the columns */
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            } 
+
+            /* the footer */
+            footer {
+                background-color: #777;
+                padding:10px;
+                text-align: center;
+                color:white;
+            }
+
+            @media (max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+        <header>
+            <h2> 무협지존: 영웅문 </h2>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="사조.html">사조</a></li>
+                    <li><a href="신조.html">신조</a></li>
+                    <li><a href="의천.html">의천</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <h1>신조</h1>
+                <p>신화: 양과, 구양봉, 소용녀, 일등대사, 금륜법왕, 임조영</p>
+                <p>전설: 천축승, 공손녹악</p>
+                <p>영웅: 니마성, 이막수, 윤극서, 공손지, 소상자  </p>
+            </article>
+        </section>
+        <footer>
+            <p>footer</p>
+        </footer>
+    </head>
+</html>
